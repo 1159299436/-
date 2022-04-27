@@ -5,59 +5,46 @@ int a=1;
 int b=1;
 int c=0;
 while(x>2)
-{a=b;
+{
+	a=b;
 c=a+b;
 b=c;
-x--;}
+x--;
+}
 if(c>1)
-{return c;}
+{
+	return c;
+}
 else if(x==0)
-{return 0;}
+{
+	return 0;
+}
 else 
 return 1;
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
 int main()
 {
 int n=0;
 int sum=0;
-printf("ÊäÈë²»Îª0µÄÊı×ÖÒÔ¿ªÊ¼·şÎñ\n");
+printf("è¾“å…¥ä¸ä¸º0çš„æ•°å­—ä»¥å¼€å§‹æœåŠ¡\n");
 scanf("%d",&n);
 while(n==0)
 {
-	printf("ÊäÈë´íÎó£¬ÇëÊäÈëÒ»¸ö²»Îª0µÄÊı×Ö\n");
+	printf("è¾“å…¥é”™è¯¯ï¼Œè¯·è¾“å…¥ä¸€ä¸ªä¸ä¸º0çš„æ•°å­—\n");
 scanf("%d",&n);
 
 }
 while(1)
-{printf("ÇëÊäÈëÒ»¸ö²»Îª0µÄÊı¿ÉÒÔ¼ÆËã\n");
+{
+	printf("è¯·è¾“å…¥ä¸€ä¸ªä¸ä¸º0çš„æ•°å¯ä»¥è®¡ç®—\n");
 	scanf("%d",&n);
 sum=fbi(n);
 if(sum>0)
-{printf("¼ÆËã½á¹û=%d\n",sum);
+{
+	printf("è®¡ç®—ç»“æœ=%d\n",sum);
 }
 else 
-printf("ÊäÈë´íÎóÇëÖØĞÂÊäÈë\n");
-
-
-
+printf("è¾“å…¥é”™è¯¯è¯·é‡æ–°è¾“å…¥\n");
 }
-
-
-
-
-
 return 0;
 }
